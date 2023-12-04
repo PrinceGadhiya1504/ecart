@@ -1,0 +1,83 @@
+{
+  "admin": [
+    {
+      "id": 1,
+      "name": "Prince Gadhiya",
+      "designation": "Owner",
+      "email": "prince@gmail.com",
+      "phone": "9316143877",
+      "username": "admin",
+      "password": "admin"
+    }
+  ],
+  "users": [
+    {
+      "name": "Prince",
+      "email": "prince@gmail.com",
+      "phone": "1234567890",
+      "username": "prince",
+      "password": "p",
+      "id": 1
+    },
+    {
+      "name": "Mayur",
+      "email": "mg@gmail.com",
+      "phone": "1234567890",
+      "username": "mg",
+      "password": "m",
+      "id": 2
+    },
+    {
+      "name": "Harshil",
+      "email": "harry@gmail.com",
+      "phone": "1234567890",
+      "username": "harry",
+      "password": "h",
+      "id": 3
+    }
+  ],
+  "Products": [
+    {
+      "name": "Shirt",
+      "description": "something",
+      "category": "man",
+      "price": "500",
+      "id": 1
+    },
+    {
+      "name": "T-shirt",
+      "description": "nothing",
+      "category": "woman",
+      "price": "500",
+      "id": 2
+    },
+    {
+      "name": "Paint",
+      "description": "Something",
+      "category": "child",
+      "price": "600",
+      "id": 3
+    },
+    {
+      "name": "Shirt",
+      "description": "something",
+      "category": "man",
+      "price": "500",
+      "id": 4
+    },
+    {
+      "name": "T-shirt",
+      "description": "nothing",
+      "category": "woman",
+      "price": "500",
+      "id": 5
+    },
+    {
+      "name": "Paint",
+      "description": "Something",
+      "category": "child",
+      "price": "600",
+      "id": 6
+    }
+  ]
+}
