@@ -9,29 +9,35 @@ const ManProduct = () => {
     axios.get('http://localhost:8000/products')
     .then(res => setData(res.data))
     .catch(err => console.log(err))
-})
+},[])
 
   return (
-    <div>
-      {
-        data.map((d, i) => {
-          if(d.category==="man"){
-            return (
-                <div class="card" style={{width: 300}}>
-                  <div class="card-body">
-                    <h5 class="card-title">{d.name}</h5>
-                    <h5 class="card-title">{d.category}</h5>
-                    <p class="card-text">{d.description}</p>
-                    <h6 class="card-subtitle mb-2 text-muted">{d.price}</h6>
-                    <Link to={'/cart'} state={d.id} className='btn btn-sm btn-primary me-2'>Add to Cart</Link>
-                  </div>
-           </div>
-            )
-          }
-          return "";
-        })
-      }
-    </div>
+    <>
+      <div className="container"> 
+        <div className="row"> 
+          {
+            data.map((d,i) => {
+              if(d.category === "man"){
+              return (
+                <div className="col-lg-4 mb-4" key={i}> 
+                  <div className="card"> 
+                    <img className="card-img-top" src="" alt="" /> 
+                      <div className="card-body"> 
+                        <h5 className="card-title">{d.name}</h5> 
+                        <p className="card-text">{d.description}</p> 
+                        <p className="card-text">{d.category}</p> 
+                        <h6 className="card-subtitle mb-2 text-muted">{d.price}</h6>
+                        <Link to={'/cart'} state={d.id} className='btn btn-sm btn-primary me-2'>Add to Cart</Link>
+                      </div> 
+                  </div> 
+                </div> 
+              )
+            }return "";
+          })
+        }     
+        </div> 
+      </div> 
+    </>
   )
 }
 

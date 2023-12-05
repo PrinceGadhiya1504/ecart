@@ -11,7 +11,7 @@ const navigate = useNavigate();
 
   return (
     <div>
-      <nav className="navbar navbar-expand-sm bg-dark navbar-dark">
+      <nav className="navbar navbar-expand-sm bg-dark navbar-dark mb-5">
           <div className="container-fluid">
             <Link to='/profile'className='navbar-brand'>Profile</Link>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,9 +34,9 @@ const navigate = useNavigate();
                 <li className="nav-item d-flex ">
                   <Link to='/cart' className='nav-link'>Cart</Link>
                 </li>
-                <li className="nav-item d-flex ">
+                {/* <li className="nav-item d-flex ">
                   <Link to='/checkout' className='nav-link'>Checkout</Link>
-                </li>
+                </li> */}
                 <li className="nav-item d-flex ">
                   <Link to='/login' onClick= {logout} className='nav-link'>Logout</Link>
                 </li>

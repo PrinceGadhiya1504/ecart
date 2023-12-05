@@ -1,8 +1,11 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Cart = () => {
   return (
-    <div>Cart</div>
+    <div>
+      <Link to={'/checkout'} className='btn btn-sm btn-primary me-2'>Add to Cart</Link>
+    </div>
   )
 }
 
