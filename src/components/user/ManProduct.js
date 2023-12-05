@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 
 const ManProduct = () => {
   const [data, setData] = useState([])
+  const useerid = sessionStorage.getItem('id');
+
 
   useEffect(() => {
     axios.get('http://localhost:8000/products')
@@ -27,7 +29,7 @@ const ManProduct = () => {
                         <p className="card-text">{d.description}</p> 
                         <p className="card-text">{d.category}</p> 
                         <h6 className="card-subtitle mb-2 text-muted">{d.price}</h6>
-                        <Link to={'/cart'} state={d.id} className='btn btn-sm btn-primary me-2'>Add to Cart</Link>
+                        <Link to={'/cart'} {...window.sessionStorage.setItem('productId',d.id)} className='btn btn-sm btn-primary me-2'>Add to Cart</Link>
                       </div> 
                   </div> 
                 </div> 
